@@ -1,0 +1,16 @@
+backend:
+  name: gold-wing-pattern-library
+
+media_folder: static/assets
+public_folder: assets
+
+collections:
+  - name: pattern
+    label: Pattern
+    folder: pattern
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
